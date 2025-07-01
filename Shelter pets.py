@@ -15,6 +15,11 @@ class pet:
     
     def birthday(self):
         self.age+=1
+   
+    def rename(self, new_name):
+        print(f"Renaming {self.name} to {new_name}")
+        self.name = new_name
+
 
 
 pet1=pet("Max","cat",int("1"))
@@ -44,4 +49,20 @@ pets = [
     pet("Lara", "dog", 2),
     pet("Rey", "dog", 2),
     pet("Nala", "rabbit", 4),
-      ]
+]
+
+pets[0].mark_adopted()
+pets[3].mark_adopted()
+
+def find_non_adopted(pets):
+    non_adopted_pets = []
+    for p in pets:
+        if not p.adopted:
+            non_adopted_pets.append(p)
+    return non_adopted_pets
+
+pets[0].rename("Milo")
+
+print("All pets:")
+for p in pets:
+    p.display_info()
