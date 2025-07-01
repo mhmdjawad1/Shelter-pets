@@ -61,8 +61,11 @@ def find_non_adopted(pets):
             non_adopted_pets.append(p)
     return non_adopted_pets
 
-pets[0].rename("Milo")
+pets[0].rename("Kay")
 
-print("All pets:")
+
+
+print("Pets:")
 for p in pets:
     p.display_info()
+
