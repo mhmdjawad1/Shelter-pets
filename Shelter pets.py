@@ -15,6 +15,14 @@ class pet:
     def birthday(self):
         self.age+=1
 
+p1=pet("dax","cat",int("1"))
+
+p2=pet("dex","dog",int("2"))
+
+p3=pet("max","cat",int("3"))
+
+
+
     
 
 
