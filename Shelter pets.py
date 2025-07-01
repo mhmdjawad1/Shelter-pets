@@ -6,16 +6,20 @@ class pet:
         self.adopted=False
 
 
+
     def display_info(self):
         current_status = "adopted" if self.adopted else "not adopted"
         print( self.name," is",self.age,"years old and its a",self.species,"and its currently",current_status)
 
+   
     def mark_adopted(self):
         self.adopted=True
     
+   
     def birthday(self):
         self.age+=1
    
+    
     def rename(self, new_name):
         print(f"Renaming {self.name} to {new_name}")
         self.name = new_name
@@ -61,14 +65,14 @@ def find_non_adopted(pets):
             non_adopted_pets.append(p)
     return non_adopted_pets
 
-pets[0].rename("Kay")
 
+
+pets[0].rename("Kay")
 
 
 print("Pets:")
 for p in pets:
     p.display_info()
-
 
 
 print("Non adopted pets:")
