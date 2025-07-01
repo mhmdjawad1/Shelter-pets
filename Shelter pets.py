@@ -37,12 +37,11 @@ pet1.display_info()
 pet2.display_info()
 pet3.display_info()
 
+#__________________________________________________________
 
-
-    
-
-
-
-
-
-    
+pets = [
+    pet("Mila", "rabbit", 3),
+    pet("Lara", "dog", 2),
+    pet("Rey", "dog", 2),
+    pet("Nala", "rabbit", 4),
+      ]
