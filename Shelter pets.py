@@ -69,3 +69,9 @@ print("Pets:")
 for p in pets:
     p.display_info()
 
+
+
+print("Non adopted pets:")
+for p in find_non_adopted(pets):
+    p.display_info()
+
