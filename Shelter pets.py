@@ -4,4 +4,6 @@ class pet:
         self.species=species
         self.age=age
         self.adopted=False
+    def display_info(self):
+        print("Pet name is", self.name," and age is",self.age,"and its a",self.species)
     
